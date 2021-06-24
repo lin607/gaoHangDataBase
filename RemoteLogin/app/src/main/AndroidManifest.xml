@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.remotelogin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="高航物业"
+        android:roundIcon="@drawable/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RemoteLogin">
+        <activity android:name=".MyMainActivity.NormalActivity.NormalUserDetailInfo.NormalUserDetailInformationActivity"></activity>
+        <activity android:name=".MyMainActivity.NormalActivity.ChargeFunction.NormalUserChargeActivity" />
+        <activity android:name=".SkipActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MyMainActivity.NormalActivity.BoardCommentFunction.NormalUserBoardMainActivity" />
+        <activity android:name=".MyMainActivity.NormalActivity.BoardCommentFunction.NormalUserContentActivity" />
+        <activity android:name=".MyMainActivity.AdminActivity.BoardFunction.AdminUserNewBoardActivity" />
+        <activity android:name=".MyMainActivity.AdminActivity.BoardFunction.AdminUserContentActivity" />
+        <activity android:name=".MyMainActivity.AdminActivity.BoardFunction.AdminUserBoardMainActivity" />
+        <activity android:name=".MyMainActivity.NormalActivity.ReportDeviceRepairFunction.NormalUserReportActivity" />
+        <activity android:name=".MyMainActivity.NormalActivity.ReportDeviceRepairFunction.NormalUserDeviceHistoryActivity" />
+        <activity android:name=".MyMainActivity.NormalActivity.ReportDeviceRepairFunction.NormalUserStaffActivity" />
+        <activity android:name=".MyMainActivity.NormalActivity.ReportDeviceRepairFunction.NormalUserDeviceRepairActivity" />
+        <activity android:name=".MyMainActivity.AdminActivity.DeviceFunction.AdminUserDeviceActivity" />
+        <activity android:name=".MyMainActivity.AdminActivity.PayFunction.AdminPayActivity" />
+        <activity android:name=".MyMainActivity.AdminActivity.CleanFunction.CleanActivity" />
+        <activity android:name=".MyMainActivity.AdminActivity.GetInfo.AdminShowUserInfoActivity" />
+        <activity android:name=".MyMainActivity.NormalActivity.PayCashFunction.NormalUserPayActivity" />
+        <activity android:name=".MyMainActivity.NormalActivity.ChangePasswordFunction.ChangePassWordActivity" />
+        <activity android:name=".MyMainActivity.AdminActivity.AdminMainActivity" />
+        <activity android:name=".MyMainActivity.NormalActivity.NormalUserMainActivity" />
+        <activity android:name=".Login.MyLoginActivity" />
+        <activity android:name=".MainActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+    </application>
+
+</manifest>

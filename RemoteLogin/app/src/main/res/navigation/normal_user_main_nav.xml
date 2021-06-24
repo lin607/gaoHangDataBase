@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/normal_user_main_nav"
+    app:startDestination="@id/normalUserInfoFragment">
+
+    <fragment
+        android:id="@+id/normalUserInfoFragment"
+        android:name="com.example.remotelogin.MyMainActivity.NormalActivity.NormalUserInfoFragment"
+        android:label="fragment_normal_user_info"
+        tools:layout="@layout/fragment_normal_user_info" >
+        <action
+            android:id="@+id/action_normalUserInfoFragment_to_normalUserOperateFragment"
+            app:destination="@id/normalUserOperateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/normalUserOperateFragment"
+        android:name="com.example.remotelogin.MyMainActivity.NormalActivity.NormalUserOperateFragment"
+        android:label="fragment_normal_user_operate"
+        tools:layout="@layout/fragment_normal_user_operate" >
+        <action
+            android:id="@+id/action_normalUserOperateFragment_to_normalUserInfoFragment"
+            app:destination="@id/normalUserInfoFragment" />
+    </fragment>
+</navigation>
